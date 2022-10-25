@@ -4,33 +4,74 @@ import no.hvl.dat100.jplab11.common.TODO;
 import no.hvl.dat100.jplab11.oppgave1.*;
 
 public class Tekst extends Innlegg {
+	
+	private int id;
+	private String bruker;
+	private String dato;
+	private String tekst;
+	private int likes;
 
 	// TODO: objektvariable 
 	
 	public Tekst () {
 		
+		
+		
+//		this.id = id;
+//		this.bruker = bruker;
+//		this.dato = dato;
+//		this.tekst = tekst;
+//		this.likes = likes;
+		
 	}
 	
 	public Tekst(int id, String bruker, String dato, String tekst) {
-		throw new UnsupportedOperationException(TODO.constructor("Tekst"));
+		
+		this.id = id;
+		this.bruker = bruker;
+		this.dato = dato;
+		this.tekst = tekst;
+		likes = 0;
+		
+//		throw new UnsupportedOperationException(TODO.constructor("Tekst"));
 	}
 	
 	public Tekst(int id, String bruker, String dato, int likes, String tekst) {
-		throw new UnsupportedOperationException(TODO.constructor("Tekst"));
+		
+		this.id = id;
+		this.bruker = bruker;
+		this.dato = dato;
+		this.tekst = tekst;
+		this.likes = likes;
+		
+//		throw new UnsupportedOperationException(TODO.constructor("Tekst"));
 	}
 	
 	public String getTekst() {
-		throw new UnsupportedOperationException(TODO.method());
+		
+		return tekst;
+		
+//		throw new UnsupportedOperationException(TODO.method());
 
 	}
 
 	public void setTekst(String tekst) {
-		throw new UnsupportedOperationException(TODO.method());
+		
+		this.tekst = tekst;
+		
+//		throw new UnsupportedOperationException(TODO.method());
 	}
 
 	@Override
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method());
+		
+//		String tekst = "TEKST" + "\n" + id + "\n" + bruker + "\n" + dato + 
+		String tekst = "TEKST" + toString() + "\n" + getTekst() + "\n";
+		
+		System.out.print(tekst);
+		return tekst;
+		
+//		throw new UnsupportedOperationException(TODO.method());
 
 	}
 	

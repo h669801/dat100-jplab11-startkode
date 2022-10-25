@@ -91,7 +91,12 @@ public abstract class Innlegg {
 	}
 	
 	public boolean erLik(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
+		
+		boolean lik = false;
+		
+		if ()
+		
+//		throw new UnsupportedOperationException(TODO.method());
 
 	}
 	
