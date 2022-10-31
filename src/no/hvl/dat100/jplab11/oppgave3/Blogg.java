@@ -4,6 +4,11 @@ import no.hvl.dat100.jplab11.common.TODO;
 import no.hvl.dat100.jplab11.oppgave1.*;
 
 public class Blogg {
+	
+//	private Blogg[] blogg;
+	private Innlegg[] innleggtabell;
+	private int nesteLedig;
+	
 
 	// TODO: objektvariable 
 
