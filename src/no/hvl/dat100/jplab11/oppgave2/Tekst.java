@@ -15,7 +15,10 @@ public class Tekst extends Innlegg {
 	
 	public Tekst () {
 		
-		
+//		id = getId();
+//		bruker = getBruker();
+//		dato = getDato();
+//		likes = getLikes();
 		
 //		this.id = id;
 //		this.bruker = bruker;
@@ -27,10 +30,12 @@ public class Tekst extends Innlegg {
 	
 	public Tekst(int id, String bruker, String dato, String tekst) {
 		
-		this.id = id;
-		this.bruker = bruker;
-		this.dato = dato;
+//		this.id = id;
+//		this.bruker = bruker;
+//		this.dato = dato;
+		super(id,bruker,dato);
 		this.tekst = tekst;
+		
 		likes = 0;
 		
 //		throw new UnsupportedOperationException(TODO.constructor("Tekst"));
@@ -38,11 +43,13 @@ public class Tekst extends Innlegg {
 	
 	public Tekst(int id, String bruker, String dato, int likes, String tekst) {
 		
-		this.id = id;
-		this.bruker = bruker;
-		this.dato = dato;
+//		this.id = id;
+//		this.bruker = bruker;
+//		this.dato = dato;
+		
+		super(id,bruker,dato,likes);
 		this.tekst = tekst;
-		this.likes = likes;
+//		this.likes = likes;
 		
 //		throw new UnsupportedOperationException(TODO.constructor("Tekst"));
 	}
@@ -66,7 +73,10 @@ public class Tekst extends Innlegg {
 	public String toString() {
 		
 //		String tekst = "TEKST" + "\n" + id + "\n" + bruker + "\n" + dato + 
-		String tekst = "TEKST" + toString() + "\n" + getTekst() + "\n";
+//		Tekst string1 = new Tekst();
+//		String te = 
+		
+		String tekst = "TEKST" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" + getTekst() + "\n";
 		
 		System.out.print(tekst);
 		return tekst;

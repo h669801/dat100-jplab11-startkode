@@ -15,10 +15,11 @@ public class Bilde extends Tekst {
 	
 	public Bilde(int id, String bruker, String dato, String tekst, String url) {
 		
-		this.id = id;
-		this.bruker = bruker;
-		this.dato = dato;
-		this.tekst = tekst;
+//		this.id = id;
+//		this.bruker = bruker;
+//		this.dato = dato;
+//		this.tekst = tekst;
+		super(id,bruker,dato,tekst);
 		this.url = url;
 		likes = 0;
 		
@@ -28,12 +29,14 @@ public class Bilde extends Tekst {
 
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
 		
-		this.id = id;
-		this.bruker = bruker;
-		this.dato = dato;
-		this.tekst = tekst;
+//		this.id = id;
+//		this.bruker = bruker;
+//		this.dato = dato;
+//		this.tekst = tekst;
+//		this.likes = likes;
+		
+		super(id,bruker,dato,likes,tekst);
 		this.url = url;
-		this.likes = likes;
 		
 		
 //		throw new UnsupportedOperationException(TODO.constructor("Bilde"));
@@ -57,7 +60,7 @@ public class Bilde extends Tekst {
 	@Override
 	public String toString() {
 		
-		String tekst = 
+		String tekst = "BILDE" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" + getTekst() + "\n" + getUrl() + "\n";;
 		
 		System.out.println(tekst);
 		
