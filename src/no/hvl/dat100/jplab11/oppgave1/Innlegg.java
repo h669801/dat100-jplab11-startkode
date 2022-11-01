@@ -94,7 +94,10 @@ public abstract class Innlegg {
 		
 		boolean lik = false;
 		
-		if ()
+		if (innlegg.id == id) {
+			lik = true;
+		}
+		return lik;
 		
 //		throw new UnsupportedOperationException(TODO.method());
 

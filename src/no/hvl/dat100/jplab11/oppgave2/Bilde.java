@@ -60,7 +60,7 @@ public class Bilde extends Tekst {
 	@Override
 	public String toString() {
 		
-		String tekst = "BILDE" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" + getTekst() + "\n" + getUrl() + "\n";;
+		String tekst = "BILDE" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" + getTekst() + "\n" + getUrl() + "\n";
 		
 		System.out.println(tekst);
 		
