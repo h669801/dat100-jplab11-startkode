@@ -2,6 +2,7 @@ package no.hvl.dat100.jplab11.oppgave3;
 
 import no.hvl.dat100.jplab11.common.TODO;
 import no.hvl.dat100.jplab11.oppgave1.*;
+import no.hvl.dat100.jplab11.oppgave2.*;
 
 public class Blogg {
 	
@@ -142,7 +143,12 @@ public class Blogg {
 	
 	public String toString() {
 		String f = Integer.toString(getAntall());
-		String tekst = f + "\n" + ;
+//		Bilde bilde = new Bilde();
+//		Tekst te = new Tekst();
+//		Innlegg t = new Innlegg();
+		
+		String tekst = f + "\n" + getSamling();
+		return tekst;
 //		throw new UnsupportedOperationException(TODO.method());
 	}
 
