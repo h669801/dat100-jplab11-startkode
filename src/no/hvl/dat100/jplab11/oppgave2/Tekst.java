@@ -76,7 +76,9 @@ public class Tekst extends Innlegg {
 //		Tekst string1 = new Tekst();
 //		String te = 
 		
-		String tekst = "TEKST" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" + getTekst() + "\n";
+		String tekst = "TEKST" + "\n" + super.toString() + getTekst() + "\n";
+		
+//		String tekst = "TEKST" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" + getTekst() + "\n";
 		
 		System.out.print(tekst);
 		return tekst;
