@@ -175,7 +175,7 @@ public class Blogg {
 		
 		String svar = "";
 	    for (int i=0; i < nesteLedig; i++) {
-	      svar += innleggtabell[i].toString() + "\n";
+	      svar +=  getAntall() + "\n" +  innleggtabell[i].toString();
 	    }
 	    return svar;
 //		throw new UnsupportedOperationException(TODO.method());

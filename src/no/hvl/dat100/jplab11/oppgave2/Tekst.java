@@ -75,12 +75,15 @@ public class Tekst extends Innlegg {
 //		String tekst = "TEKST" + "\n" + id + "\n" + bruker + "\n" + dato + 
 //		Tekst string1 = new Tekst();
 //		String te = 
+//		String o = super.toString();
+//		String string = o.toString();
+//		System.out.println(string);
 		
-		String tekst = "TEKST" + "\n" + super.toString() + getTekst() + "\n";
+		String tekst = "TEKST" + "\n" + super.toString() + getTekst();
 		
 //		String tekst = "TEKST" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" + getTekst() + "\n";
 		
-		System.out.print(tekst);
+//		System.out.print(tekst);
 		return tekst;
 		
 //		throw new UnsupportedOperationException(TODO.method());

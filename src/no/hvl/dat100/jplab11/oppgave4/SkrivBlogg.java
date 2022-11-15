@@ -12,13 +12,34 @@ public class SkrivBlogg {
 		
 		String fil = filnavn;
 		String mappen = mappe;
-		PrintWriter skriver = new PrintWriter (fil);
-		
+		PrintWriter skriver;
 		String sam = samling.toString();
+//		File fil1 = new File(MAPPE_STR + filnavn);
+		try {
+			skriver = new PrintWriter (mappen + fil);
+			skriver.println(sam);
+			if (skriver.equals(sam)) {
+				skriver.close();
+				return true;
+				
+			}
+			else {
+				skriver.close();
+				return false;
+				
+			}
+			
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return true;
+			
+		}
 		
-		skriver.println(sam);
 		
-		skriver.close();
+		
+		
 		
 
 //		throw new UnsupportedOperationException(TODO.method());

@@ -62,7 +62,10 @@ public class Bilde extends Tekst {
 		
 //		String tekst = "BILDE" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" + getTekst() + "\n" + getUrl() + "\n";
 		
-		String tekst = "BILDE" + "\n" + super.toString() + getUrl() + "\n";
+		Tekst t = new Tekst();
+		String o = super.getId() + "\n" + super.getBruker() + "\n" + super.getDato() + "\n" + super.getLikes() + "\n" + super.getTekst()+ "\n";
+		
+		String tekst = "BILDE" + "\n" + o + getUrl() + "\n";
 		
 		System.out.println(tekst);
 		
